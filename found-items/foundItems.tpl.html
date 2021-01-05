@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-9" style="height: 70vh; overflow-y: scroll;overflow-x: hidden;">
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="item in FoundItemsCtrl.items">
+        <h4 class="list-group-item-heading">{{item.name}} - {{item.short_name}}</h4>
+        <p class="list-group-item-text">{{item.description}}</p>
+        <button class="btn btn-info" ng-click="FoundItemsCtrl.remove({index: $index})">Don't want this one!</button>
+      </li>
+    </ul>
+  </div>
+</div>
